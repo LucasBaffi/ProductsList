@@ -10,8 +10,11 @@ const dataProducts = (produtos) => {
     img.src = produtos.img
     h3.innerText = produtos.nome
     span.innerText = produtos.secao
-    p.innerText = produtos.preco
+    let price = produtos.preco.toFixed(2).toString().replace(".", ",")   
+    p.innerText = `R$ ${price}`
 
+    div.classList.add('div-card')
+    
     div.append(img, h3, span, p)
     li.appendChild(div)
 
@@ -22,9 +25,9 @@ const dataProducts = (produtos) => {
 const ul = document.querySelector('.ul-products')
 
 const renderProdcts = (arr) => {
-
+    ul.innerHTML = ""
     arr.forEach((element) => {
-        const card = dataProducts
+        const card = dataProducts(element)
         ul.appendChild(card)
     });
 }
