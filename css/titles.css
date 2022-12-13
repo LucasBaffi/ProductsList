@@ -1,0 +1,25 @@
+h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.span-price{
+    background: #212529;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.point-exclamation{
+    border: 2px solid;
+    border-radius: 50px;
+    width: 17px;
+    height: 18px;
+    color: #12b886;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
