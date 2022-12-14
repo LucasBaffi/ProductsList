@@ -10,11 +10,11 @@ const dataProducts = (produtos) => {
     img.src = produtos.img
     h3.innerText = produtos.nome
     span.innerText = produtos.secao
-    let price = produtos.preco.toFixed(2).toString().replace(".", ",")   
+    let price = produtos.preco.toFixed(2).toString().replace(".", ",")
     p.innerText = `R$ ${price}`
 
     div.classList.add('div-card')
-    
+
     div.append(img, h3, span, p)
     li.appendChild(div)
 
@@ -32,3 +32,7 @@ const renderProdcts = (arr) => {
     });
 }
 renderProdcts(produtos)
+
+
+
+
