@@ -30,7 +30,9 @@ const renderProdcts = (arr) => {
         const card = dataProducts(element)
         ul.appendChild(card)
     });
+
 }
+
 renderProdcts(produtos)
 
 
